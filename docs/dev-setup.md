@@ -26,6 +26,22 @@ git push origin main
 
 If asked, complete GitHub authentication in your terminal.
 
+## Recommended HTTPS auth setup
+
+If `git push` keeps asking or fails on username/password, set up GitHub CLI auth once:
+
+```sh
+gh auth login
+gh auth setup-git
+git push origin main
+```
+
+For macOS credential storage with HTTPS remotes:
+
+```sh
+git config --global credential.helper osxkeychain
+```
+
 ## Optional: switch to SSH remote
 
 ```sh

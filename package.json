@@ -6,6 +6,7 @@
   "scripts": {
     "env:check": "./scripts/check-env.sh",
     "plan:print": "node ./tools/print-plan.mjs",
-    "docs:validate": "node ./tools/validate-docs.mjs"
+    "docs:validate": "node ./tools/validate-docs.mjs",
+    "test:smoke": "./scripts/test-smoke.sh"
   }
 }

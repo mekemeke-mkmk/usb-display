@@ -34,8 +34,12 @@ struct ParseResult {
   const char* error = "";
 };
 
+inline constexpr std::uint16_t kFixedHeaderBytes = 36;
+
 // Phase 1 intentionally keeps protocol code simple and allocation-friendly.
 // Performance work can replace this with pooled buffers later.
 ParseResult validate_packet(const FramePacket& packet);
+std::vector<std::uint8_t> serialize_packet(const FramePacket& packet);
+ParseResult parse_packet(std::span<const std::uint8_t> bytes, FramePacket* out_packet);
 
 }  // namespace usb_display
