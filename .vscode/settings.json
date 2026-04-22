@@ -1,0 +1,12 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [100],
+  "markdown.validate.enabled": true,
+  "search.exclude": {
+    "build": true,
+    "dist": true,
+    "out": true
+  }
+}

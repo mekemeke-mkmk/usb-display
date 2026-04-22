@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Check Environment",
+      "type": "shell",
+      "command": "./scripts/check-env.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Print Plan",
+      "type": "shell",
+      "command": "node ./tools/print-plan.mjs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Validate Docs",
+      "type": "shell",
+      "command": "node ./tools/validate-docs.mjs",
+      "problemMatcher": []
+    }
+  ]
+}

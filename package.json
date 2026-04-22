@@ -1,0 +1,11 @@
+{
+  "name": "usb-display-bootstrap",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bootstrap workspace for a low-bandwidth USB display project",
+  "scripts": {
+    "env:check": "./scripts/check-env.sh",
+    "plan:print": "node ./tools/print-plan.mjs",
+    "docs:validate": "node ./tools/validate-docs.mjs"
+  }
+}
